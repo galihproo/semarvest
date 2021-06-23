@@ -1,5 +1,8 @@
 import "./Contact.css";
+import Topbar from '../components/Topbar';
 
 export default function Contact() {
-  return <div className="Contact-text">this is contact component</div>;
+  return (
+    <Topbar />
+  )
 }

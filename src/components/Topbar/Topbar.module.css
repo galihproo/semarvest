@@ -1,0 +1,32 @@
+.topbar {
+    padding: 35px 1rem;
+}
+
+.navbarBrand {
+    margin-right: 34px;
+}
+
+.btnNav {
+    font-size: 16px;
+    padding: 13px 20px;
+}
+
+@media(min-width: 992px) {
+    .navbarNav {
+        margin-right: auto;
+    }
+    .navLink {
+        margin-right: 18px;
+    }
+}
+
+@media(max-width: 991px) {
+    .navbarNav {
+        align-items: center;
+    }
+
+    .formInline, .btnNav {
+        display: block;
+        width: 100%;
+    }
+}
