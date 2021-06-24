@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import { NavLink, Link } from "react-router-dom";
+
+import { Navbar, Nav, Form, Button, Modal } from "react-bootstrap";
 
 import BrandIcon from '../../assets/brand-icon.svg';
 
@@ -11,37 +10,113 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import styles from './Topbar.module.css';
 
-const Topbar = () => {
+const Topbar = ({ show, handleShow, handleClose }) => {
     return (
-        <Navbar bg="inherit" expand="lg" className={styles.topbar}>
-            <Link to="/">
-                <Navbar.Brand className={styles.navbarBrand}>
-                    <img src={BrandIcon} alt="brand icon" />
-                </Navbar.Brand>
-            </Link>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className={styles.navbarNav}>
-                    <Link to="/">
-                        <Nav.Link href="/" className={styles.navLink} activeClassName="active">Beranda</Nav.Link>
-                    </Link>
-                    <Link to="/tentang">
-                        <Nav.Link href="/tentang" className={styles.navLink} activeClassName="active">Tentang</Nav.Link>
-                    </Link>
-                    <Link to="/fitur">
-                        <Nav.Link hrefr="/fitur" className={styles.navLink} activeClassName="active">Fitur</Nav.Link>
-                    </Link>
-                    <Link to="/kontak">
-                        <Nav.Link href="/kontak" className={styles.navLink} activeClassName="active">Kontak</Nav.Link>
-                    </Link>
-                </Nav>
-                <Form inline className={styles.formInline}>
-                    <Button variant="link" className={styles.btnNav}>Masuk</Button>
-                    <Button variant="primary" className={styles.btnNav}>Daftar</Button>
-                </Form>
-            </Navbar.Collapse>
-        </Navbar>
+        <>
+            <Navbar 
+                bg="inherit" 
+                expand="lg" 
+                className={styles.topbar}
+            >
+                <Link to="/">
+                    <Navbar.Brand className={styles.navbarBrand}>
+                        <img 
+                            src={BrandIcon} 
+                            alt="brand icon"
+                        />
+                    </Navbar.Brand>
+                </Link>
+
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className={styles.navbarNav}>
+
+                        <NavLink 
+                            exact 
+                            to="/" 
+                            className="text-decoration-none" 
+                            activeClassName="active"
+                        >
+                            <Nav.Link 
+                                href="/" 
+                                className={styles.navLink}
+                            >   Beranda
+                            </Nav.Link>
+                        </NavLink>
+                        
+                        <NavLink 
+                            to="/kontak" 
+                            className="text-decoration-none" 
+                            activeClassName="active"
+                        >
+                            <Nav.Link 
+                                href="/kontak" 
+                                className={styles.navLink}
+                            >   Kontak
+                            </Nav.Link>
+                        </NavLink>
+
+                    </Nav>
+
+                    <Form inline className={styles.formInline}>
+                        <Button 
+                            variant="link" 
+                            className={styles.btnNav}
+                            onClick={handleShow}
+                        >   Masuk
+                        </Button>
+                        <Button 
+                            variant="primary" 
+                            className={styles.btnNav}
+                            onClick={handleShow}
+                        >   Daftar
+                        </Button>
+                    </Form>
+
+                </Navbar.Collapse>
+            </Navbar>
+
+            <Modal
+                className={styles.modal}
+                show={show} 
+                onHide={handleClose}
+                centered
+            >
+                <Modal.Body className={styles.modalBody}>
+                    <Button 
+                        className={styles.modalButton}
+                        variant="primary" 
+                    >
+                        Daftar sebagai investor 
+                    </Button>
+
+                    <p>atau</p>
+
+                    <Button 
+                        className={styles.modalButton}
+                        variant="outline-primary"
+                    >
+                        Daftar sebagai mitra UMKM 
+                    </Button>
+
+                    <p>
+                        Sudah memiliki akun? 
+                        <Link to="/login" className="btn-link font-bold">
+                            Masuk
+                        </Link>
+                    </p>
+
+                </Modal.Body>
+            </Modal>
+        </>
     )
+}
+
+Topbar.propTypes = {
+    show: PropTypes.bool,
+    handleShow: PropTypes.func,
+    handleClose: PropTypes.func
 }
 
 export default Topbar

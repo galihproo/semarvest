@@ -1,0 +1,20 @@
+.cardPartner {
+    margin: 0 15px;
+    border-radius: 10px;
+    border: 1px solid #DEE1E5;
+}
+
+.cardHeader {
+    padding: 20px 20px 0;
+    background-color: #fff;
+    border: none;
+}
+
+.cardImg {
+    border-radius: 10px;
+}
+
+.cardBody {
+    padding: 20px;
+    border-radius: 0 10p 10px 0;
+}

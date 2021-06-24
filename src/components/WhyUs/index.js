@@ -12,7 +12,7 @@ import IconDevice from '../../assets/ic-device.svg';
 const WhyUs = () => {
     return (
         <section className={styles.whyUs}>
-            <h2 className={styles.whyUsHeading}>Kenapa harus SemarVest?</h2>
+            <h2 className={`${styles.whyUsHeading} text-center text-lg-left`}>Kenapa harus SemarVest?</h2>
             <Row xs={1} md={2} lg={3}>
                 <Col>
                     <Card className={styles.whyUsCard}>

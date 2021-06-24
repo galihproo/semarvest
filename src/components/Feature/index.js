@@ -2,6 +2,8 @@ import { Row, Col } from "react-bootstrap";
 
 import styles from './Feature.module.css';
 
+import Banner from '../Banner';
+
 import FeatureBanner from '../../assets/feature-banner.png';
 import FeatureIconFunding from '../../assets/ic-pendanaan.svg';
 import FeatureIconTraining from '../../assets/ic-pelatihan.svg';
@@ -10,12 +12,17 @@ import FeatureIconTracking from '../../assets/ic-tracking.svg';
 const Feature = () => {
     return (
         <section className={styles.featureSection}>
-            <h2 className={styles.featureHeading}>Fitur kami</h2>
+            <h2 className={`${styles.featureHeading} text-center text-lg-left`}>Fitur kami</h2>
             <Row>
-                <Col xs={12} lg={4}>
-                    <img className={styles.featureBanner} src={FeatureBanner} alt="feature banner" />
-                </Col>
-                <Col xs={12} lg={8} className={styles.featureColRight}>
+
+                <Banner
+                    src={FeatureBanner}
+                    alt="feature banner"
+                    xs="12"
+                    lg="4"
+                />
+
+                <Col xs={12} lg={8} className={`${styles.featureColRight} mt-5 mt-lg-0`}>
                     <Row className={styles.featureLists}>
                         <Col className={styles.featureItem}>
                             <div className={styles.featureIcon}>
@@ -54,6 +61,7 @@ const Feature = () => {
                         </Col>
                     </Row>
                 </Col>
+
             </Row>
         </section>
     )

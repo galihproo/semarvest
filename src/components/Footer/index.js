@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { Container, Row, Col } from 'react-bootstrap';
 
 import styles from './Footer.module.css';
@@ -16,7 +18,9 @@ const Footer = () => {
                 <Row>
                     <Col xs={12} md={7} lg={7}>
                         <div className={styles.footerLeft}>
-                            <img src={BrandIcon} alt="brand icon" />
+                            <Link to="/">
+                                <img src={BrandIcon} alt="brand icon" />
+                            </Link>
                             <p>
                                 SemarVest bertekad membantu UMKM meningkatkan taraf ekonominya sekaligus investor dapat mencapai tujuan investasinya.
                             </p>                                     

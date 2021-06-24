@@ -54,10 +54,6 @@
 }
 
 @media(max-width: 991px) {
-    .featureHeading {
-        text-align: center;
-    }
-
     .featureBanner {
         width: 50%;
         display: block;
