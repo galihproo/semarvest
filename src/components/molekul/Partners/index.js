@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 import Slider from "react-slick";
 
-import PrevArrow from '../../assets/arrow-left.svg';
-import NextArrow from '../../assets/arrow-right.svg';
+import PrevArrow from '../../../assets/arrow-left.svg';
+import NextArrow from '../../../assets/arrow-right.svg';
 
-import PartnerCard from '../PartnerCard';
+import PartnerCard from '../../atom/PartnerCard';
 
 import styles from './Partners.module.css';
 

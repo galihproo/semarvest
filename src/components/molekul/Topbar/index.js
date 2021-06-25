@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 
 import { Navbar, Nav, Form, Button, Modal } from "react-bootstrap";
 
-import BrandIcon from '../../assets/brand-icon.svg';
+import BrandIcon from '../../../assets/brand-icon.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,26 +35,16 @@ const Topbar = ({ show, handleShow, handleClose }) => {
                         <NavLink 
                             exact 
                             to="/" 
-                            className="text-decoration-none" 
+                            className={`${styles.navLink} text-decoration-none`}
                             activeClassName="active"
-                        >
-                            <Nav.Link 
-                                href="/" 
-                                className={styles.navLink}
-                            >   Beranda
-                            </Nav.Link>
+                        >   Beranda
                         </NavLink>
                         
                         <NavLink 
                             to="/kontak" 
-                            className="text-decoration-none" 
+                            className={`${styles.navLink} text-decoration-none`}
                             activeClassName="active"
-                        >
-                            <Nav.Link 
-                                href="/kontak" 
-                                className={styles.navLink}
-                            >   Kontak
-                            </Nav.Link>
+                        >   Kontak
                         </NavLink>
 
                     </Nav>

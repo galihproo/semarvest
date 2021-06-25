@@ -3,8 +3,8 @@ import { Row, Col, Form, Modal, Button } from "react-bootstrap";
 import PropTypes from 'prop-types';
 import styles from './FormContact.module.css';
 
-import Banner from '../Banner';
-import FormBanner from '../../assets/form-banner.png';
+import Banner from '../../atom/Banner';
+import FormBanner from '../../../assets/form-banner.png';
 
 const FormContact = ({ handleSubmit, handleClose, onEmailChange, onSubjectChange, onMessageChange, emailValue, subjectValue, messageValue, show }) => {
 

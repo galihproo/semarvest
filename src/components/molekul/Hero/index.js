@@ -6,8 +6,8 @@ import Topbar from '../Topbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Hero.module.css';
 
-import Banner from '../Banner';
-import HeroBanner from '../../assets/hero-banner.png';
+import Banner from '../../atom/Banner';
+import HeroBanner from '../../../assets/hero-banner.png';
 
 const Hero = () => {
     return (

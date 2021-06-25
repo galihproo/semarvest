@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 import Container from "react-bootstrap/Container";
-import Hero from '../components/Hero';
-import Feature from '../components/Feature';
-import WhyUs from '../components/WhyUs';
-import Partners from '../components/Partners';
-import CallToAction from "../components/CallToAction";
-import Footer from '../components/Footer';
+import Hero from '../components/molekul/Hero';
+import Feature from '../components/molekul/Feature';
+import WhyUs from '../components/molekul/WhyUs';
+import Partners from '../components/molekul/Partners';
+import CallToAction from "../components/molekul/CallToAction";
+import Footer from '../components/molekul/Footer';
 
 export default function Home() {
   const [show, setShow] = useState(false);

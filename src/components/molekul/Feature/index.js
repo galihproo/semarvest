@@ -2,12 +2,12 @@ import { Row, Col } from "react-bootstrap";
 
 import styles from './Feature.module.css';
 
-import Banner from '../Banner';
+import Banner from '../../atom/Banner';
 
-import FeatureBanner from '../../assets/feature-banner.png';
-import FeatureIconFunding from '../../assets/ic-pendanaan.svg';
-import FeatureIconTraining from '../../assets/ic-pelatihan.svg';
-import FeatureIconTracking from '../../assets/ic-tracking.svg';
+import FeatureBanner from '../../../assets/feature-banner.png';
+import FeatureIconFunding from '../../../assets/ic-pendanaan.svg';
+import FeatureIconTraining from '../../../assets/ic-pelatihan.svg';
+import FeatureIconTracking from '../../../assets/ic-tracking.svg';
 
 const Feature = () => {
     return (

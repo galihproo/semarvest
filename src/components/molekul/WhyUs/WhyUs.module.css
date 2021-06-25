@@ -15,6 +15,7 @@
     height: 170px;
     padding: 32px;
     margin: 15px 0;
+    justify-content: center;
 }
 
 .cardImg {

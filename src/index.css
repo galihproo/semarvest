@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.active a {
+.active {
   font-weight: bold !important;
   color: #0071BC !important;
 }

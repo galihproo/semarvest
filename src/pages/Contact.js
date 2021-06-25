@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import Container from 'react-bootstrap/Container';
 
-import Topbar from '../components/Topbar';
-import FormContact from '../components/FormContact';
-import Footer from '../components/Footer';
+import Topbar from '../components/molekul/Topbar';
+import FormContact from '../components/molekul/FormContact';
+import Footer from '../components/molekul/Footer';
 
 export default function Contact() {
   const [show, setShow] = useState(false);
