@@ -1,0 +1,22 @@
+.cardPartner {
+    margin: 0 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(153, 153, 153, 0.25);
+}
+
+.cardHeader {
+    padding: 20px 20px 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px !important;
+}
+
+.cardImg {
+    border-radius: 10px;
+}
+
+.cardBody {
+    padding: 20px;
+    border-radius: 0 10p 10px 0;
+}

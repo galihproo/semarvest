@@ -1,0 +1,43 @@
+.topbar {
+    padding: 35px 1rem;
+}
+
+.navbarBrand {
+    margin-right: 34px;
+}
+
+.navLink {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8D959E;
+    text-decoration: none;
+}
+
+.btnNav {
+    font-size: 16px;
+    padding: 13px 20px;
+}
+
+@media(min-width: 992px) {
+    .navbarNav {
+        margin-right: auto;
+    }
+    .navLink {
+        margin-right: 18px;
+    }
+}
+
+@media(max-width: 991px) {
+    .navbarNav {
+        align-items: center;
+        padding-top: 15px;
+    }
+    .navLink {
+        padding: 15px 0;
+    }
+    .formInline, .btnNav {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+.heroWrapper {
+    background: linear-gradient(180deg, #DDF1FF 65.56%, rgba(221, 241, 255, 0.71) 80.07%, rgba(221, 241, 255, 0) 96.45%);
+}
+
+.heroRow {
+    position: relative;
+    margin-top: 30px;
+}
+
+.heroLeft {
+    padding-top: 45px;
+}
+
+.heroHeading {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    margin-bottom: 32px;
+    color: #1F2A36;
+}
+
+.heroParagraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 32px;
+    color: #46505C;
+}
+
+.btnHero {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 14px 32px;
+}
+
+.heroBanner {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.heroBannerWave {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+}
+
+@media(max-width: 991px) {
+    .heroRow {
+        flex-direction: column-reverse;
+    }
+
+    .heroBanner {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .heroHeading, .heroParagraph {
+        text-align: center;
+    }
+
+    .btnHero {
+        width: 100%;
+    }
+}
+
+@media(max-width: 575px) {
+    .heroHeading {
+        font-size: 34px;
+        line-height: 47px;
+    }
+    
+    .heroParagraph {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .btnHero {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
