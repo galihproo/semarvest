@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.inputContainer {
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.inputSearch {
+    border: none;
+    padding: 23px 22px;
+}

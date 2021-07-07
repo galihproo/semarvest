@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Container from "react-bootstrap/Container";
 import Hero from '../components/molekul/Hero';
+import FundingHorizontalView from '../components/molekul/FundingHorizontalView';
 import Feature from '../components/molekul/Feature';
 import WhyUs from '../components/molekul/WhyUs';
 import Partners from '../components/molekul/Partners';
@@ -40,7 +41,7 @@ export default function Home() {
       />
 
       <Container>
-
+        <FundingHorizontalView />
         <Feature />
         <WhyUs />
         {userData.length > 0 && <Partners userData={userData} />}

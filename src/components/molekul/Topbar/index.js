@@ -39,6 +39,14 @@ const Topbar = ({ show, handleShow, handleClose }) => {
                             activeClassName="active"
                         >   Beranda
                         </NavLink>
+
+                        <NavLink 
+                            exact 
+                            to="/pendanaan" 
+                            className={`${styles.navLink} text-decoration-none`}
+                            activeClassName="active"
+                        >   Pendanaan
+                        </NavLink>
                         
                         <NavLink 
                             to="/kontak" 

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Toko Hijab",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    },
+    {
+        "id": 2,
+        "name": "Toko Baju",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    },
+    {
+        "id": 3,
+        "name": "Toko Mebel",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    },
+    {
+        "id": 4,
+        "name": "Toko Hewan",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    },
+    {
+        "id": 5,
+        "name": "Toko Elektronik",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    },
+    {
+        "id": 6,
+        "name": "Toko Manusia",
+        "rate": 4.5,
+        "location": "Wanakarsa, Banjarnegara",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fnarmadi.com%2Fid%2Fwp-content%2Fuploads%2F2020%2F04%2Ftoko-baju-renang-di-Sidoarjo-Sports-Station-Lippo-Plaza-Sidoarjo.png%3Fresize%3D299%252C222%26ssl%3D1&f=1&nofb=1",
+        "plafon": "5.000.000",
+        "tenor": 20,
+        "remaining_time": 10
+    }
+]
