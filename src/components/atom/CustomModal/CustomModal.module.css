@@ -1,11 +1,11 @@
 .modalBody {
-    padding: 54px 94px;
+    margin: 34px 74px;
     text-align: center;
 }
 
 .modalButton {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
     border-radius: 12px;
     margin-bottom: 8px;
 }
