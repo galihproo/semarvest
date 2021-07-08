@@ -5,9 +5,16 @@ import fundingData from "../../../assets/dummy/funding.data.json";
 import iconMap from "../../../assets/ic-map.svg";
 
 import styles from './PendanaanDetail.module.css';
+import CustomModal from '../../atom/CustomModal';
+import React from 'react';
 
 const PendanaanDetailContent = ({id}) => {
+    const [show, setShow] = React.useState(false);
     const index = id - 1;
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    
     return (
         <Container>
             <Row className={styles.top}>
@@ -95,7 +102,7 @@ const PendanaanDetailContent = ({id}) => {
                                     12% Keuntungan
                                 </div>
                             </div>
-                            <Button variant="primary" href="#" className={styles.btn} style={{borderRadius: "8px"}}>Salurkan Pendanaan</Button>
+                            <Button variant="primary" className={styles.btn} onClick={handleShow} style={{borderRadius: "8px"}}>Salurkan Pendanaan</Button>
                             <Button variant="outline-primary" href="#" className={styles.btn}>Lihat Rincian Pendanaan</Button>
                         </Card.Body>
                     </Card>
@@ -114,6 +121,7 @@ const PendanaanDetailContent = ({id}) => {
                     </p>
                 </Col>
             </Row>
+            <CustomModal handleClose={handleClose} show={show} type='detail-pendanaan' />
         </Container>
     )
 }

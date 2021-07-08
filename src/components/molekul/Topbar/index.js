@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import { NavLink, Link } from "react-router-dom";
 
-import { Navbar, Nav, Form, Button, Modal, Image } from "react-bootstrap";
+import { Navbar, Nav, Form, Button, Image } from "react-bootstrap";
+import CustomModal from "../../atom/CustomModal";
 
 import BrandIcon from '../../../assets/brand-icon.svg';
-import IconClose from '../../../assets/ic-close.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -68,7 +68,7 @@ const Topbar = () => {
                         <Button 
                             variant="link" 
                             className={styles.btnNav}
-                            href="/masuk"
+                            href="/"
                         >   Masuk
                         </Button>
                         <Button 
@@ -82,41 +82,7 @@ const Topbar = () => {
                 </Navbar.Collapse>
             </Navbar>
 
-            <Modal
-                className={styles.modal}
-                show={show} 
-                onHide={handleClose}
-                centered
-            >
-                <Image onClick={handleClose} src={IconClose} className={styles.btnClose} />
-                <Modal.Body className={styles.modalBody}>
-                    <Button 
-                        className={styles.modalButton}
-                        variant="primary" 
-                        href="/daftar/investor"
-                    >
-                        Daftar sebagai investor 
-                    </Button>
-
-                    <p className="m-0 mb-2">atau</p>
-
-                    <Button 
-                        className={styles.modalButton}
-                        variant="outline-primary"
-                        href="/daftar/umkm"
-                    >
-                        Daftar sebagai mitra UMKM 
-                    </Button>
-
-                    <p>
-                        Sudah memiliki akun?
-                        <Link to="/masuk" className="btn-link font-bold ml-1">
-                            Masuk
-                        </Link>
-                    </p>
-
-                </Modal.Body>
-            </Modal>
+            <CustomModal handleClose={handleClose} show={show} type='register' />
         </>
     )
 }

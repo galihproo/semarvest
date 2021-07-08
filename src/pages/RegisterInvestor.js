@@ -1,45 +1,50 @@
-import { useState } from "react";
+import React from "react";
 
 import Container from 'react-bootstrap/Container';
 
 import Topbar from '../components/molekul/Topbar';
-import FormContact from '../components/molekul/FormContact';
+import FormRegister from '../components/molekul/FormRegister';
 import Footer from '../components/molekul/Footer';
 
 export default function RegisterInvestor() {
-  const [show, setShow] = useState(false);
-  const [emailValue, setEmailValue] = useState('');
-  const [subjectValue, setSubjectValue] = useState('');
-  const [messageValue, setMessageValue] = useState('');
 
-  const handleClose = () => {
-      setEmailValue('')
-      setSubjectValue('')
-      setMessageValue('')
-      setShow(false)
-  };
+  const formName = "daftar-investor"
 
-  const handleSubmit = (e) => {
+  const initialValueForm = {
+    fullName: '',
+    phone: '',
+    email: '',
+    // password: '',
+    // retryPassword: '',
+  }
+
+  const [form, setForm] = React.useState(initialValueForm)
+  const [loading, setLoading] = React.useState(false)
+
+  const submit = (e) => {
       e.preventDefault()
-      setShow(true)
-  };
+      setLoading(true)
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzhXeLrknPhktpBEULo0yU8XtsmRboFtCSYKDc3UQuEGPMnk5O5ykfnM69K8UJcix_K/exec';
+      const formBody = document.forms[formName]
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(formBody)})
+      .then(response => {
+        console.log('Success!', response);
+        setForm(initialValueForm);
+      })
+      .catch(error => console.error('Error!', error.message))
+      .finally(() => {
+        setLoading(false)
+      })
+  }
 
   return (
     <>
       <Container>
         
         <Topbar />
-        <FormContact 
-          handleSubmit={handleSubmit} 
-          handleClose={handleClose}
-          onEmailChange={(e) => setEmailValue(e.target.value)}
-          onSubjectChange={(e) => setSubjectValue(e.target.value)}
-          onMessageChange={(e) => setMessageValue(e.target.value)}
-          emailValue={emailValue}
-          subjectValue={subjectValue}
-          messageValue={messageValue}
-          show={show}
-        />
+        <FormRegister formName={formName} form={form} setForm={setForm} submit={submit} loading={loading} />
 
       </Container>
 

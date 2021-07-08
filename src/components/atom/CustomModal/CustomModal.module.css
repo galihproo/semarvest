@@ -1,0 +1,19 @@
+.modalBody {
+    padding: 54px 94px;
+    text-align: center;
+}
+
+.modalButton {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.btnClose {
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    right: -18px;
+    top: -18px
+}

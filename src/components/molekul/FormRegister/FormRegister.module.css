@@ -1,0 +1,80 @@
+.form {
+    margin: 24px 0 80px;
+}
+
+.formRow {
+    justify-content: space-around;
+}
+
+.formHeading {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    color: #1F2A36;
+}
+
+.formGroup {
+    margin-bottom: 24px;
+}
+
+.formLabel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #46505C;
+}
+
+.formInput {
+    border: 1px solid #C7CCD0;
+    border-radius: 8px;
+    color: #46505C;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btnSubmit {
+    padding: 14px 0;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.formBanner {
+    width: 100%;
+}
+
+.modalTitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #1F2A36;
+    margin: 0 auto;
+}
+
+.modalBody p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #46505C;
+    margin-bottom: 20px;
+}
+
+.modalButton {
+    width: 100%;
+}
+
+@media(min-width: 992px) {
+    .form {
+        margin: 42px 0 136px;
+    }
+}
+
+@media(max-width: 767px) {
+    .formRow {
+        flex-direction: column-reverse;
+    }
+
+    .formHeading {
+        text-align: center;
+    }
+}
