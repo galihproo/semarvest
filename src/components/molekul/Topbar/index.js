@@ -1,16 +1,23 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { NavLink, Link } from "react-router-dom";
 
-import { Navbar, Nav, Form, Button, Modal } from "react-bootstrap";
+import { Navbar, Nav, Form, Button, Modal, Image } from "react-bootstrap";
 
 import BrandIcon from '../../../assets/brand-icon.svg';
+import IconClose from '../../../assets/ic-close.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import styles from './Topbar.module.css';
 
-const Topbar = ({ show, handleShow, handleClose }) => {
+const Topbar = () => {
+    const [show, setShow] = React.useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    
     return (
         <>
             <Navbar 
@@ -61,7 +68,7 @@ const Topbar = ({ show, handleShow, handleClose }) => {
                         <Button 
                             variant="link" 
                             className={styles.btnNav}
-                            onClick={handleShow}
+                            href="/masuk"
                         >   Masuk
                         </Button>
                         <Button 
@@ -81,26 +88,29 @@ const Topbar = ({ show, handleShow, handleClose }) => {
                 onHide={handleClose}
                 centered
             >
+                <Image onClick={handleClose} src={IconClose} className={styles.btnClose} />
                 <Modal.Body className={styles.modalBody}>
                     <Button 
                         className={styles.modalButton}
                         variant="primary" 
+                        href="/daftar/investor"
                     >
                         Daftar sebagai investor 
                     </Button>
 
-                    <p>atau</p>
+                    <p className="m-0 mb-2">atau</p>
 
                     <Button 
                         className={styles.modalButton}
                         variant="outline-primary"
+                        href="/daftar/umkm"
                     >
                         Daftar sebagai mitra UMKM 
                     </Button>
 
                     <p>
-                        Sudah memiliki akun? 
-                        <Link to="/login" className="btn-link font-bold">
+                        Sudah memiliki akun?
+                        <Link to="/masuk" className="btn-link font-bold ml-1">
                             Masuk
                         </Link>
                     </p>
