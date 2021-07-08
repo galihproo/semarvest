@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Topbar from '../components/molekul/Topbar';
 import Footer from '../components/molekul/Footer';
 import { useParams } from "react-router-dom";
+import PendanaanDetailContent from "../components/molekul/PendanaanDetailContent";
 
 export default function PendanaanDetail() {
   const { id } = useParams();
@@ -15,6 +16,7 @@ export default function PendanaanDetail() {
         <Container>
             
             <Topbar />
+            <PendanaanDetailContent id={id} />
 
         </Container>
 

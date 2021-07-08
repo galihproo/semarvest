@@ -90,7 +90,7 @@ const FundingHorizontalView = () => {
             image={data.image}
             location={data.location}
             name={data.name}
-            plafon={data.plafon}
+            plafon={data.dana.target}
             rate={data.rate}
             remainingTime={data.remaining_time}
             tenor={data.tenor}

@@ -18,7 +18,7 @@ const Funding = () => {
                             id={data.id}
                             image={data.image}
                             location={data.location}
-                            plafon={data.plafon}
+                            plafon={data.dana.target}
                             rate={data.rate}
                             remainingTime={data.remaining_time}
                             tenor={data.tenor}

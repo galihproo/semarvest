@@ -1,0 +1,111 @@
+.top {
+    padding-bottom: 64px;
+    border-bottom: 1px solid #DEE1E5;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapperCenter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.iconMap {
+    margin-right: 8px;
+}
+
+.subTitle {
+    font-weight: 300;
+}
+
+.subTitle2 {
+    font-size: 14px;
+    color: #8D959E;
+}
+
+.subTitle3 {
+    font-size: 16px;
+}
+
+.warnaBiru {
+    color: #0071BC;
+}
+
+.progress {
+    height: 8px;
+    margin-bottom: 8px;
+}
+
+.marginBottom {
+    margin-bottom: 42px;
+}
+
+.itemPendanaan {
+    margin-bottom: 24px;
+}
+
+.cardSetPendanaan {
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.btn {
+    font-weight: 600;
+    padding: 13px 20px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #0071BC;
+    margin-top: 14px;
+}
+
+.btn:hover {
+    background-color: #0071BC;
+}
+
+.cardTitle {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputGroupCard {
+    margin-bottom: 20px;
+}
+
+.note {
+    margin-top: 10px;
+    text-align: center;
+    color: #8D959E;
+}
+
+.btnDisable {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    pointer-events: none;
+    color: #1F2A36;
+    font-weight: 500;
+}
+
+.selectInputCardWrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.selectInputCard {
+    min-width: 80px;
+    margin-right: 8px;
+}
+
+.bottom {
+    padding-top: 64px;
+}
