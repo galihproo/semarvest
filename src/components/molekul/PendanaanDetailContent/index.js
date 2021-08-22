@@ -36,7 +36,7 @@ const PendanaanDetailContent = ({ id }) => {
           />
           <h3 className={styles.name}>{fundingData[index].name}</h3>
           <span className={styles.wrapper}>
-            <img src={iconMap} className={styles.iconMap} />
+            <img src={iconMap} className={styles.iconMap} alt="icon-map" />
             <h6 className={styles.locationText}>
               {fundingData[index].location}
             </h6>
